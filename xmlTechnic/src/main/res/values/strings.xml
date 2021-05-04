@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">XmlTechnic</string>
+    <string name="xml_build" translatable="false">XML Builder</string>
+    <string name="xml_parse" translatable="false">XML Parser</string>
+</resources>

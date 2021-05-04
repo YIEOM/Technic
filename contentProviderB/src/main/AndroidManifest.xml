@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="yieom.javastudy.contentproviderb">
+
+    <uses-permission android:name="yieom.javastudy.contentprovidera.READ_DATABASE" />
+    <uses-permission android:name="yieom.javastudy.contentprovidera.WRITE_DATABASE" />
+    <!--<permission android:name="yieom.javastudy.contentproviderb.READ_DATABASE" android:protectionLevel="normal" />
+    <permission android:name="yieom.javastudy.contentproviderb.WRITE_DATABASE" android:protectionLevel="normal" />-->
+
+    <application>
+        <provider android:name="yieom.javastudy.contentproviderb.ModuleContentProvider"
+            android:authorities="yieom.javastudy.contentproviderb.ModuleContentProvider"
+            android:exported="true"
+            android:readPermission="yieom.javastudy.contentproviderb.READ_DATABASE"
+            android:writePermission="yieom.javastudy.contentproviderb.WRITE_DATABASE"/>
+    </application>
+</manifest>

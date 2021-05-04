@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="yieom.javastudy.xmltechnic">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application>
+        <provider android:name="yieom.javastudy.xmltechnic.ModuleContentProvider"
+            android:authorities="yieom.javastudy.xmltechnic.ModuleContentProvider"
+            android:exported="true"
+            android:readPermission="yieom.javastudy.xmltechnic.READ_DATABASE"
+            android:writePermission="yieom.javastudy.xmltechnic.WRITE_DATABASE"/>
+    </application>
+</manifest>

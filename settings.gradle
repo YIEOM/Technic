@@ -1,0 +1,5 @@
+include ':xmlTechnic'
+include ':contentProviderA'
+include ':contentProviderB'
+include ':app'
+rootProject.name = "contentprovider"
