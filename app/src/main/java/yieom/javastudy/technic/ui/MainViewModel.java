@@ -11,6 +11,7 @@ import com.google.android.material.tabs.TabLayout;
 import java.util.ArrayList;
 
 import yieom.javastudy.contentproviderb.ui.Page2Fragment;
+import yieom.javastudy.technic.BuildConfig;
 import yieom.javastudy.technic.R;
 import yieom.javastudy.technic.utils.GeneralUtil;
 import yieom.javastudy.xmltechnic.ui.XmlFragment;
@@ -38,7 +39,13 @@ public class MainViewModel extends ViewModel {
     }
 
     public void init() {
-        mainTxt.set(GeneralUtil.getString(R.string.main));
+        String main =  "";
+        if(BuildConfig.FLAVOR.equals("tempApi1")) {
+            main = "api1 "+GeneralUtil.getString(R.string.main);
+        } else if(BuildConfig.FLAVOR.equals("tempApi2")) {
+            main = "api2 "+GeneralUtil.getString(R.string.main);
+        }
+        mainTxt.set(main);
     }
 
     public FragmentStatePagerAdapter getViewPagerAdapter() {
